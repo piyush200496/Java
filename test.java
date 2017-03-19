@@ -47,7 +47,7 @@ public static void showencrypt()
 	
 }
 	public static void main(String[] args) throws SQLException {
-		Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/demo?useSSL=false","root","TheDeadman");
+		Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/demo?useSSL=false","username","password");
 db o=new db(con);
 		int count=0;
 		
