@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Java Starter Project</title>
+</head>
+<body>
+<img th:src="@{/images/images.png}" th:align="center" />
+<h3><p> This is a template for a web app using Spring Boot, Thymeleaf and Hibernate, <span th:text="${name}"></span></p></h3>
+<br/>
+<h2>
+<p>Resources to learn and make better web apps</p>
+</h2>
+<ol>
+  <li><a  th:href="@{http://www.devglan.com/spring-boot/spring-boot-hibernate-5-example}">Spring Boot Hibernate example</a></li>
+  <li><a  th:href="@{https://www.javacodegeeks.com/2014/03/thymeleaf-integration-with-spring-part-2.html}">Spring integration with Thymeleaf</a></li>
+  <li><a  th:href="@{http://www.dineshonjava.com/2016/08/spring-data-jpa-using-in-spring-boot-application.html}">Using JPA in Spring Boot apps</a></li>
+  <li><a  th:href="@{http://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html}">Thymeleaf official guide</a></li>
+<li><a  th:href="@{https://spring.io/guides/gs/spring-boot/}">Spring Boot official document</a></li>
+<li><a  th:href="@{https://shakeelosmani.wordpress.com/2017/02/13/step-by-step-spring-boot-hibernate-crud-web-application-tutorial/}">Making a CRUD app using Spring and Hibernate</a></li>
+</ol>
+</body>
+</html>

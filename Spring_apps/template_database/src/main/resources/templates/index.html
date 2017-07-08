@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Welcome to LeanApps!</title>
+</head>
+<body>
+
+<img th:src="@{/images/images.png}" /><h2>Welcome to LeanApps!!</h2>
+<form action="#" th:action="@{/}" th:object="${employee}" method="post">
+		<table>
+			<tr>
+				<td>Id:</td>
+				<td><input type="text" th:field="*{id}"  /></td>
+				<td th:if="${#fields.hasErrors('id')}" th:errors="*{id}">Id error message</td>
+			</tr>
+			<tr>
+				<td>Name:</td>
+				<td><input type="text" th:field="*{name}" /></td>
+				<td th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name error message</td>
+			</tr>
+					<tr>
+				<td>Team:</td>
+				<td><input type="text" th:field="*{team}" /></td>
+				<td th:if="${#fields.hasErrors('team')}" th:errors="*{team}">Team error message</td>
+			</tr>
+			<tr>
+				<td>Mobile Number:</td>
+				<td><input type="text" th:field="*{no}"  /></td>
+				<td th:if="${#fields.hasErrors('no')}" th:errors="*{no}">No error message</td>
+			</tr>
+	
+			<tr>
+				<td><button type="submit">Submit details</button></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
